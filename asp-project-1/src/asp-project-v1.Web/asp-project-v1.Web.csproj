@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+    <PropertyGroup>
+        <TargetFramework>net9.0</TargetFramework>
+        <Nullable>enable</Nullable>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <RootNamespace>asp_project_v1.Web</RootNamespace>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Swashbuckle.AspNetCore.Swagger" Version="10.1.0" />
+        <PackageReference Include="Swashbuckle.AspNetCore.SwaggerGen" Version="10.1.0" />
+        <PackageReference Include="Swashbuckle.AspNetCore.SwaggerUI" Version="10.1.0" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\asp-project-1.Domain\asp-project-1.Domain.csproj" />
+      <ProjectReference Include="..\asp-project-1.Presenters\asp-project-1.Presenters.csproj" />
+    </ItemGroup>
+
+</Project>
