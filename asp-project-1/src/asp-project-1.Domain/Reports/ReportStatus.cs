@@ -1,6 +1,6 @@
 namespace asp_project_1.Domain.Reports;
 
-public enum Status  
+public enum ReportStatus  
 {
     Open,
     Resolved,

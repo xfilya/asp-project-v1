@@ -2,23 +2,23 @@
 
     <PropertyGroup>
         <TargetFramework>net9.0</TargetFramework>
-        <RootNamespace>asp_project_1.Presenters</RootNamespace>
+        <RootNamespace>asp_project_1.Application</RootNamespace>
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
     </PropertyGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\asp-project-1.Application\asp-project-1.Application.csproj" />
       <ProjectReference Include="..\asp-project-1.Contracts\asp-project-1.Contracts.csproj" />
       <ProjectReference Include="..\asp-project-1.Domain\asp-project-1.Domain.csproj" />
     </ItemGroup>
 
     <ItemGroup>
-      <PackageReference Include="Microsoft.AspNetCore.Mvc.Core" Version="2.3.0" />
+      <Folder Include="Comments\" />
     </ItemGroup>
 
     <ItemGroup>
-      <Folder Include="Comments\" />
+      <PackageReference Include="FluentValidation.DependencyInjectionExtensions" Version="12.1.1" />
+      <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="8.0.2" />
     </ItemGroup>
 
 </Project>

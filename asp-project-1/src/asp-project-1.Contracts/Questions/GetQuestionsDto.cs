@@ -1,3 +1,3 @@
-namespace asp_project_1.Contracts;
+namespace asp_project_1.Contracts.Questions;
 
 public record GetQuestionsDto(string Search, Guid[] TagIds, int Page, int PageSize);

@@ -10,6 +10,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "asp-project-1.Presenters", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "asp-project-1.Contracts", "src\asp-project-1.Contracts\asp-project-1.Contracts.csproj", "{4F6E745B-2DB5-44EF-ADFF-70C81952B324}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "asp-project-1.Application", "src\asp-project-1.Application\asp-project-1.Application.csproj", "{DDE97F27-61B4-4095-A4A2-DE2FDD1CADFB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -32,11 +34,16 @@ Global
 		{4F6E745B-2DB5-44EF-ADFF-70C81952B324}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4F6E745B-2DB5-44EF-ADFF-70C81952B324}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4F6E745B-2DB5-44EF-ADFF-70C81952B324}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DDE97F27-61B4-4095-A4A2-DE2FDD1CADFB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DDE97F27-61B4-4095-A4A2-DE2FDD1CADFB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DDE97F27-61B4-4095-A4A2-DE2FDD1CADFB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DDE97F27-61B4-4095-A4A2-DE2FDD1CADFB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{C407133D-75CF-4355-9367-AF102C0BE30E} = {415211F7-F7C7-4D0C-85C7-F80EFFD2A3D8}
 		{3D0A03C0-0EFF-4E18-AB8F-3F4C12F885E6} = {415211F7-F7C7-4D0C-85C7-F80EFFD2A3D8}
 		{7031B4F3-9683-4D5E-A5CD-2B287CF42611} = {415211F7-F7C7-4D0C-85C7-F80EFFD2A3D8}
 		{4F6E745B-2DB5-44EF-ADFF-70C81952B324} = {415211F7-F7C7-4D0C-85C7-F80EFFD2A3D8}
+		{DDE97F27-61B4-4095-A4A2-DE2FDD1CADFB} = {415211F7-F7C7-4D0C-85C7-F80EFFD2A3D8}
 	EndGlobalSection
 EndGlobal
