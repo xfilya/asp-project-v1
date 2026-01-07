@@ -1,16 +1,25 @@
-using asp_project_1.Contracts;
+using asp_project_1.Application.Questions;
+using asp_project_1.Contracts.Questions;
 using Microsoft.AspNetCore.Mvc;
 
-namespace asp_project_1.Presenters;
+namespace asp_project_1.Presenters.Questions;
 
 [ApiController]
 [Route("[controller]")]
 public class QuestionsController : ControllerBase
 {
+    private readonly IQuestionsService _questionsService;
+
+    public QuestionsController(IQuestionsService questionsService)
+    {
+        _questionsService = questionsService;
+    }
+    
     [HttpPost]
     public async Task<IActionResult> Create([FromBody] CreateQuestionDto createQuestionDto, CancellationToken ct)
     {
-        return Ok("Question created");    
+        var questionId = await _questionsService.Create(createQuestionDto, ct);
+        return Ok("Question created with id" +  questionId);    
     }
 
     [HttpGet]
